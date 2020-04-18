@@ -20,7 +20,7 @@ Instructions to run the project:
 
 4 - Create a new database in Neo4j. Is recommended to use 3.5.14 database version due compatibility with graph algorithms;
 
-5 - Install graph algorithms in the created database. See how: https://neo4j.com/docs/graph-algorithms/current/introduction/#_installation; 
+5 - Install graph algorithms in the created database. See how: https://neo4j.com/docs/graph-algorithms/current/introduction/; 
 
 6 - Run the script located in the file "Neo4J_Script.txt" in "Files" folder to create a sample data that reflects the Farfetch Delivery Service Exercice example;
 
