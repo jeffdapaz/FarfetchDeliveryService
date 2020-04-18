@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.697
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{C04E2564-133E-4FA7-A864-C30D4BCFF5BA}"
+	ProjectSection(SolutionItems) = preProject
+		Files\CreateDeliveryServiceDataBase.sql = Files\CreateDeliveryServiceDataBase.sql
+		Files\FarfetchDeliveryServiceExercice.json = Files\FarfetchDeliveryServiceExercice.json
+		Files\Neo4J_Script.txt = Files\Neo4J_Script.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarfetchDeliveryServiceSqlServerRepository", "FarfetchDeliveryServiceRepository\FarfetchDeliveryServiceSqlServerRepository.csproj", "{E4193990-19EC-43E1-8197-75CDE34A4F1B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarfetchDeliveryServiceBestRouteApi", "FarfetchDeliveryServiceBestRouteApi\FarfetchDeliveryServiceBestRouteApi.csproj", "{DAACFEDE-8093-4790-AEE9-149086710937}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarfetchDeliveryServiceApi", "FarfetchDeliveryServiceApi\FarfetchDeliveryServiceApi.csproj", "{11073480-B0AA-46A2-A44C-AB3110E20C54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarfetchDeliveryServiceGatewayApi", "FarfetchDeliveryServiceGatewayApi\FarfetchDeliveryServiceGatewayApi.csproj", "{5A5CEA11-4A94-4AE1-B092-472DB1DA7B79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarfetchDeliveryServiceGraphRepository", "FarfetchDeliveryServiceGraphRepository\FarfetchDeliveryServiceGraphRepository.csproj", "{E0B9C7EB-8564-4718-B7CE-60D2AA2C9EC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarfetchDeliveryServiceBestRouteApi.Test", "FarfetchDeliveryServiceBestRouteApi.Test\FarfetchDeliveryServiceBestRouteApi.Test.csproj", "{1357C824-3240-4EFB-BC54-18A2ADF463B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarfetchDeliveryServiceApi.Test", "FarfetchDeliveryServiceApi.Test\FarfetchDeliveryServiceApi.Test.csproj", "{2B56653E-F5AB-453A-AC6F-FE3A5206B5D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4193990-19EC-43E1-8197-75CDE34A4F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4193990-19EC-43E1-8197-75CDE34A4F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4193990-19EC-43E1-8197-75CDE34A4F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4193990-19EC-43E1-8197-75CDE34A4F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAACFEDE-8093-4790-AEE9-149086710937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAACFEDE-8093-4790-AEE9-149086710937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAACFEDE-8093-4790-AEE9-149086710937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAACFEDE-8093-4790-AEE9-149086710937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11073480-B0AA-46A2-A44C-AB3110E20C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11073480-B0AA-46A2-A44C-AB3110E20C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11073480-B0AA-46A2-A44C-AB3110E20C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11073480-B0AA-46A2-A44C-AB3110E20C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5CEA11-4A94-4AE1-B092-472DB1DA7B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5CEA11-4A94-4AE1-B092-472DB1DA7B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5CEA11-4A94-4AE1-B092-472DB1DA7B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5CEA11-4A94-4AE1-B092-472DB1DA7B79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0B9C7EB-8564-4718-B7CE-60D2AA2C9EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B9C7EB-8564-4718-B7CE-60D2AA2C9EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B9C7EB-8564-4718-B7CE-60D2AA2C9EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B9C7EB-8564-4718-B7CE-60D2AA2C9EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1357C824-3240-4EFB-BC54-18A2ADF463B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1357C824-3240-4EFB-BC54-18A2ADF463B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1357C824-3240-4EFB-BC54-18A2ADF463B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1357C824-3240-4EFB-BC54-18A2ADF463B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B56653E-F5AB-453A-AC6F-FE3A5206B5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B56653E-F5AB-453A-AC6F-FE3A5206B5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B56653E-F5AB-453A-AC6F-FE3A5206B5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B56653E-F5AB-453A-AC6F-FE3A5206B5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F12CF00-1A9C-454B-8882-650374A444C1}
+	EndGlobalSection
+EndGlobal

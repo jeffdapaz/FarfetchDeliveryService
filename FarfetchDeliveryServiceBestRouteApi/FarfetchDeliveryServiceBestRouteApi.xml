@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FarfetchDeliveryServiceBestRouteApi</name>
+    </assembly>
+    <members>
+        <member name="T:FarfetchDeliveryServiceBestRouteApi.Controllers.BestRouteController">
+            <summary>
+            Controller responsible to get the best route
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceBestRouteApi.Controllers.BestRouteController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,FarfetchDeliveryServiceGraphRepository.Domain.Interfaces.IBestRouteRepository)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceBestRouteApi.Controllers.BestRouteController.Get(System.String,System.String,System.String)">
+            <summary>
+            Action responsible to get the best route based on departure and destiny points
+            </summary>
+            <param name="token">Token header autorization</param>
+            <param name="pointDepartureName">Departure's name</param>
+            <param name="pointDestinyName">Destiny's name</param>
+            <returns>Best route</returns>
+        </member>
+        <member name="T:FarfetchDeliveryServiceBestRouteApi.Helpers.CustomExceptionFilter">
+            <summary>
+            Filter to get and treat the exceptions
+            </summary>
+        </member>
+        <member name="T:FarfetchDeliveryServiceBestRouteApi.Helpers.DependencyInjection">
+            <summary>
+            Class responsible for the project dependecy injection
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceBestRouteApi.Helpers.DependencyInjection.Configure(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure the project dependecy injection
+            </summary>
+        </member>
+        <member name="T:FarfetchDeliveryServiceBestRouteApi.Models.BestRoute">
+            <summary>
+            Model for best route result
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceBestRouteApi.Models.BestRoute.PointDepartureName">
+            <summary>
+            Point's departure name
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceBestRouteApi.Models.BestRoute.PointDestinyName">
+            <summary>
+            Point's destiny name
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceBestRouteApi.Models.BestRoute.TotalEffort">
+            <summary>
+            Total effort to delevery by this route
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceBestRouteApi.Models.BestRoute.CompletePath">
+            <summary>
+            The complete route path
+            </summary>
+        </member>
+        <member name="T:FarfetchDeliveryServiceBestRouteApi.Models.Path">
+            <summary>
+            Entity that represents a path
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceBestRouteApi.Models.Path.PointName">
+            <summary>
+            Point's name
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceBestRouteApi.Models.Path.Effort">
+            <summary>
+            Effort to get this point
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,421 @@
+{
+	"info": {
+		"_postman_id": "cb676b1f-6a11-4f33-b9ea-7a55c5478499",
+		"name": "FarfetchDeliveryServiceExercice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Best Route - Get",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "M5e5rbPFubPW7NU6pjuNAAspxx0ji075",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Token",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/BestRoute?pointDepartureName=A&pointDestinyName=B",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"BestRoute"
+					],
+					"query": [
+						{
+							"key": "pointDepartureName",
+							"value": "A"
+						},
+						{
+							"key": "pointDestinyName",
+							"value": "B"
+						}
+					]
+				},
+				"description": "Get a best route directly by Best Route API"
+			},
+			"response": []
+		},
+		{
+			"name": "Account - Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "//{\"Login\": \"user\", \"Password\": \"123456\"}\n{\"Login\": \"admin\", \t\"Password\": \"abcdef\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/Account",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Point - Get All",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/Point",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Point"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Point - Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/Point/J",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Point",
+						"J"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Point - Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/Point/J",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Point",
+						"J"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Route- Get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/Route?pointDepartureName=A&pointDestinyName=C",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Route"
+					],
+					"query": [
+						{
+							"key": "pointDepartureName",
+							"value": "A"
+						},
+						{
+							"key": "pointDestinyName",
+							"value": "C"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Route- Get By Departure",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/Route/GetByDeparture/A",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Route",
+						"GetByDeparture",
+						"A"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Route- Get By Destiny",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/Route/GetByDestiny/B",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Route",
+						"GetByDestiny",
+						"B"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Route - Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"PointDepartureName\": \"A\",\r\n  \"PointDestinyName\": \"B\",\r\n  \"Time\": 10,\r\n  \"Cost\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/Route",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Route - Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"PointDepartureName\": \"A\",\r\n  \"PointDestinyName\": \"B\",\r\n  \"Time\": 1,\r\n  \"Cost\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/Route",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Route - Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/Route?pointDepartureName=A&pointDestinyName=B",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Route"
+					],
+					"query": [
+						{
+							"key": "pointDepartureName",
+							"value": "A"
+						},
+						{
+							"key": "pointDestinyName",
+							"value": "B"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7daf938a-cbb4-492f-bf55-a890dd2964e7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5fecf669-54a7-4850-b687-a243bbdb63f8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "78ea3a1c-1569-40df-bd49-92f73b34aa97",
+			"key": "URL",
+			"value": "https://localhost:44303",
+			"type": "string"
+		},
+		{
+			"id": "52ffca4b-17cd-4fde-ab8b-19e05c29c328",
+			"key": "Token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFkbWluIiwicm9sZSI6ImFkbWluIiwibmJmIjoxNTg3MjIzMDU1LCJleHAiOjE1ODczMDk0NTUsImlhdCI6MTU4NzIyMzA1NX0.S127JtrGEgREKNXsM0dSAwuvJltCehKpn2TOrVx6sPM",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

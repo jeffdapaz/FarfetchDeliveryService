@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FarfetchDeliveryServiceApi</name>
+    </assembly>
+    <members>
+        <member name="T:FarfetchDeliveryServiceApi.Controllers.AccountController">
+            <summary>
+            Controller responsible for users autentication
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.AccountController.#ctor(FarfetchDeliveryServiceApi.Services.Interfaces.IUsersServices)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.AccountController.Login(FarfetchDeliveryServiceApi.Models.User)">
+            <summary>
+            Action to do a user login
+            </summary>
+            <param name="user">User's data</param>
+            <returns>Token to use in requests</returns>
+        </member>
+        <member name="T:FarfetchDeliveryServiceApi.Controllers.PointController">
+            <summary>
+            Controller to maintain Points
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.PointController.#ctor(FarfetchDeliveryServiceGraphRepository.Domain.Interfaces.IPointRepository)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.PointController.Get">
+            <summary>
+            Get all Points
+            </summary>
+            <returns>Points</returns>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.PointController.Post(System.String)">
+            <summary>
+            Create a new Point
+            </summary>
+            <param name="name">New Point's name</param>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.PointController.Delete(System.String)">
+            <summary>
+            Delete a Point
+            </summary>
+            <param name="name">Point's Id that will be deleted</param>
+        </member>
+        <member name="T:FarfetchDeliveryServiceApi.Controllers.RouteController">
+            <summary>
+            Controller to maintain Routes
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.RouteController.#ctor(FarfetchDeliveryServiceGraphRepository.Domain.Interfaces.IRouteRepository,FarfetchDeliveryServiceGraphRepository.Domain.Interfaces.IPointRepository,AutoMapper.IMapper)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.RouteController.Get(System.String,System.String)">
+            <summary>
+            Get a route between two points
+            </summary>
+            <param name="pointDepartureName">Departure's name</param>
+            <param name="pointDestinyName">Destiny's name</param>
+            <returns>Route</returns>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.RouteController.GetByDeparture(System.String)">
+            <summary>
+            Return a route list that have a point as departure
+            </summary>
+            <param name="pointDepartureName">Departure's name</param>
+            <returns>Route list that have a point as departure</returns>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.RouteController.GetByDestiny(System.String)">
+            <summary>
+            Return a route list that have a point as destiny
+            </summary>
+            <param name="pointDestinyName">Destiny's name</param>
+            <returns>Route list that have a point as destiny</returns>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.RouteController.Post(FarfetchDeliveryServiceApi.Models.Route)">
+            <summary>
+            Create a new Route
+            </summary>
+            <param name="route">Route that will be created</param>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.RouteController.Put(FarfetchDeliveryServiceApi.Models.Route)">
+            <summary>
+            Update a Route
+            </summary>
+            <param name="route">Route that will be updated</param>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Controllers.RouteController.Delete(System.String,System.String)">
+            <summary>
+            Delete a Route
+            </summary>
+            <param name="pointDepartureName">Departure's name</param>
+            <param name="pointDestinyName">Destiny's name</param>
+        </member>
+        <member name="T:FarfetchDeliveryServiceApi.Helpers.CustomExceptionFilter">
+            <summary>
+            Filter to get and treat the exceptions
+            </summary>
+        </member>
+        <member name="T:FarfetchDeliveryServiceApi.Helpers.DependencyInjection">
+            <summary>
+            Class responsible for the project dependecy injection
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Helpers.DependencyInjection.Configure(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure the project dependecy injection
+            </summary>
+        </member>
+        <member name="T:FarfetchDeliveryServiceApi.Mappers.RouteMapper">
+            <summary>
+            Class responsible to mapper Route model and entity
+            </summary>
+        </member>
+        <member name="T:FarfetchDeliveryServiceApi.Models.Route">
+            <summary>
+            Model that represents the route between a departure and destiny points
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceApi.Models.Route.PointDepartureName">
+            <summary>
+            Point's departure name
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceApi.Models.Route.PointDestinyName">
+            <summary>
+            Point's destiny name
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceApi.Models.Route.Time">
+            <summary>
+            Time spend to delivery a item between departure and destiny points
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceApi.Models.Route.Cost">
+            <summary>
+            Cost to delivery a item between departure and destiny points
+            </summary>
+        </member>
+        <member name="T:FarfetchDeliveryServiceApi.Models.User">
+            <summary>
+            Model for the users
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceApi.Models.User.Login">
+            <summary>
+            User's login
+            </summary>
+        </member>
+        <member name="P:FarfetchDeliveryServiceApi.Models.User.Password">
+            <summary>
+            User's password
+            </summary>
+        </member>
+        <member name="T:FarfetchDeliveryServiceApi.Services.Interfaces.IUsersServices">
+            <summary>
+            Interface for the class responsible to manage users
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Services.Interfaces.IUsersServices.Authenticate(FarfetchDeliveryServiceApi.Models.User)">
+            <summary>
+            Validate a user autentication and return a token to use in requestes
+            </summary>
+            <param name="user">User's data</param>
+            <returns>Token</returns>
+        </member>
+        <member name="T:FarfetchDeliveryServiceApi.Services.UsersServices">
+            <summary>
+            Class responsible to manage users
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Services.UsersServices.#ctor(Microsoft.Extensions.Configuration.IConfiguration,FarfetchDeliveryServiceSqlServerRepository.Domain.Interfaces.IUsersRepository)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Services.UsersServices.Authenticate(FarfetchDeliveryServiceApi.Models.User)">
+            <summary>
+            Validate a user autentication and return a token to use in requests
+            </summary>
+            <param name="user">User's data</param>
+            <returns>Token</returns>
+        </member>
+        <member name="M:FarfetchDeliveryServiceApi.Services.UsersServices.ValidateUserPassword(System.String,System.String)">
+            <summary>
+            Validate the user password
+            </summary>
+            <param name="password">Password to validate</param>
+            <param name="actual">Actual ppassword</param>
+            <returns>Password encrypted</returns>
+        </member>
+    </members>
+</doc>

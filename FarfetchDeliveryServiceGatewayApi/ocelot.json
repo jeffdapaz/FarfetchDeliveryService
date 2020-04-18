@@ -1,0 +1,77 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/Account",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/Account",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44355
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Point/{everything}",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/Point/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44355
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Point",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/Point",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44355
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Route/{everything}",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/Route/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44355
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Route",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/Route",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44355
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/BestRoute",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/BestRoute",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44395
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {}
+}
