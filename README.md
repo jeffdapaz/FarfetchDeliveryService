@@ -2,6 +2,8 @@
 
 This project is an exercice that demonstrates use of a Neo4j database to search a less effort (shortest) route between two points.
 
+The use of Neo4j in this project is due to the fact that this type of database (graph) is the most recommended when it is necessary to store complex relationships. And the search for these relationships is faster in the graph databases than in the common relational ones.
+
 This project consist of two RESTfull APIs built using .NET Core 2.2 and one API as gateway using OCELOT.
 
 - The FarfetchDeliveryServiceGatewayApi is the gateway API.
